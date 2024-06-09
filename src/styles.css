@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-filter, .availability-calendar, .payment-section {
+    margin-bottom: 20px;
+}
+
+.search-filter input, .search-filter select {
+    margin-right: 10px;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.booking-form, .payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label, .payment-form label {
+    margin-top: 10px;
+}
+
+.booking-form input, .booking-form select, .booking-form button, .payment-form input, .payment-form select, .payment-form button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#payment-details {
+    display: none;
+}

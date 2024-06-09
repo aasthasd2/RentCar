@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoomCar - Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">ZoomCar</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Catalog</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="availability-calendar">
+        <h2>Check Availability</h2>
+        <div class="calendar">
+            <!-- Calendar UI could be more complex, for simplicity, we'll use date input fields -->
+        </div>
+        <form class="booking-form" id="booking-form">
+            <label for="car">Select Car:</label>
+            <select id="car">
+                <option value="toyota-corolla">Toyota Corolla</option>
+                <option value="honda-civic">Honda Civic</option>
+                <!-- More options -->
+            </select>
+
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date">
+
+            <label for="dropoff-date">Drop-off Date:</label>
+            <input type="date" id="dropoff-date" name="dropoff-date">
+
+            <label for="pickup-time">Pickup Time:</label>
+            <input type="time" id="pickup-time" name="pickup-time">
+
+            <label for="dropoff-time">Drop-off Time:</label>
+            <input type="time" id="dropoff-time" name="dropoff-time">
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Contact Us | Terms & Conditions | Privacy Policy</p>
+</footer>
+</body>
+</html>

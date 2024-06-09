@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZoomCar - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">ZoomCar</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Catalog</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="login.html">Login/Signup</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="search-filter">
+    <input type="text" id="search-bar" placeholder="Search cars...">
+    <select id="car-type">
+      <option value="">All Types</option>
+      <option value="SUV">SUV</option>
+      <option value="Sedan">Sedan</option>
+      <option value="Hatchback">Hatchback</option>
+    </select>
+    <select id="car-brand">
+      <option value="">All Brands</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Honda">Honda</option>
+      <option value="Ford">Ford</option>
+    </select>
+    <input type="range" id="price-range" min="0" max="1000" step="50">
+    <span id="price-value">Max Price: $1000</span>
+  </section>
+
+  <section class="car-list" id="car-list">
+    <div class="car-item" data-type="Sedan" data-brand="Toyota" data-price="50">
+      <img src="car1.jpg" alt="Toyota Corolla">
+      <h3>Toyota Corolla</h3>
+      <p>$50/day</p>
+      <button>View Details</button>
+    </div>
+    <div class="car-item" data-type="Sedan" data-brand="Honda" data-price="60">
+      <img src="car2.jpg" alt="Honda Civic">
+      <h3>Honda Civic</h3>
+      <p>$60/day</p>
+      <button>View Details</button>
+    </div>
+    <!-- More car items -->
+  </section>
+</main>
+
+<footer>
+  <p>Contact Us | Terms & Conditions | Privacy Policy</p>
+</footer>
+</body>
+</html>

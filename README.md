@@ -10,4 +10,10 @@
 3. Install Yarn
    npm install --global yarn
 
-4. If using intellij idea, click on the browser button to refresh 
+4. If using intellij idea, click on the browser button to refresh
+5. Set up sqlite in this project
+   - npm init -y
+   - npm install express sqlite3
+If Some issue came, then try to run this :
+   - npm audit fix --force
+

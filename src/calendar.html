@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <div class="logo">ZoomCar</div>
+    <div class="logo"><a href="index.html" style="color: pink; text-decoration: none;">ZoomCar</a></div>
     <nav>
         <ul>
             <li><a href="index.html">Catalog</a></li>
@@ -21,38 +21,40 @@
 </header>
 
 <main>
-    <section class="availability-calendar">
-        <h2>Check Availability</h2>
-        <div class="calendar">
-            <!-- Calendar UI could be more complex, for simplicity, we'll use date input fields -->
-        </div>
-        <form class="booking-form" id="booking-form">
-            <label for="car">Select Car:</label>
-            <select id="car">
-                <option value="toyota-corolla">Toyota Corolla</option>
-                <option value="honda-civic">Honda Civic</option>
-                <!-- More options -->
-            </select>
+    <h1>Book a Car</h1>
+    <form id="booking-form">
+        <label for="car-select">Select Car:</label>
+        <select id="car-select" required>
+            <option value="">Select a car</option>
+        </select>
 
-            <label for="pickup-date">Pickup Date:</label>
-            <input type="date" id="pickup-date" name="pickup-date">
+        <label for="user-name">Your Name:</label>
+        <input type="text" id="user-name" placeholder="Your Name" required>
 
-            <label for="dropoff-date">Drop-off Date:</label>
-            <input type="date" id="dropoff-date" name="dropoff-date">
+        <label for="user-email">Your Email:</label>
+        <input type="email" id="user-email" placeholder="Your Email" required>
 
-            <label for="pickup-time">Pickup Time:</label>
-            <input type="time" id="pickup-time" name="pickup-time">
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" required>
 
-            <label for="dropoff-time">Drop-off Time:</label>
-            <input type="time" id="dropoff-time" name="dropoff-time">
+        <label for="dropoff-date">Drop-off Date:</label>
+        <input type="date" id="dropoff-date" required>
 
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" required>
+            <option value="">Select payment method</option>
+            <option value="cash">Cash</option>
+            <option value="online">Online</option>
+        </select>
+
+        <button type="submit">Book</button>
+    </form>
+
+    <div id="booking-status"></div>
 </main>
 
 <footer>
-    <p>Contact Us | Terms & Conditions | Privacy Policy</p>
+    <p><a href="contact.html">Contact Us</a> | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
 </footer>
 </body>
 </html>

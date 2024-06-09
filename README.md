@@ -7,5 +7,7 @@
    Select Browser template just to run on your browser locally
    npm init js-project [project-name]
 
-2. Install Yarn
+3. Install Yarn
    npm install --global yarn
+
+4. If using intellij idea, click on the browser button to refresh 

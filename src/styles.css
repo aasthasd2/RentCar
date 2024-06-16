@@ -91,3 +91,25 @@ footer {
 #payment-details {
     display: none;
 }
+
+/* Existing styles */
+
+.car-details-popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.car-details-popup button {
+    margin-bottom: 10px;
+    float: right;
+}
